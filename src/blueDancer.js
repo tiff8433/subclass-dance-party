@@ -10,3 +10,7 @@ MakeBlueDancer.prototype.step = function(){
   this.$node.addClass("blueDancer");
   this.$node.toggleClass("smallBlueDancer");
 };
+
+MakeBlueDancer.prototype.lineUp =  function(){
+  MakeDancer.prototype.setPosition.call(this, 200);
+}

@@ -9,3 +9,7 @@ MakeSpinningDancer.prototype.step = function(){
   MakeDancer.prototype.step.call(this);
   this.$node.addClass("spinningDancer");
 };
+
+MakeSpinningDancer.prototype.lineUp =  function(){
+  MakeDancer.prototype.setPosition.call(this, 400);
+}
