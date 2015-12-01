@@ -1,7 +1,7 @@
 
 
 var MakeBlinkyDancer = function(top, left, timeBetweenSteps){
-  console.log(this);
+
   MakeDancer.call(this, top, left, timeBetweenSteps);
 };
 
