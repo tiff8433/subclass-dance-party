@@ -1,7 +1,6 @@
 
 
 var MakeBlinkyDancer = function(top, left, timeBetweenSteps){
-
   MakeDancer.call(this, top, left, timeBetweenSteps);
 };
 
@@ -13,6 +12,9 @@ MakeBlinkyDancer.prototype.step = function(){
   this.$node.toggle();
 };
 
-
+MakeBlinkyDancer.prototype.lineUp =  function(){
+  console.log("lineUp called");
+  MakeDancer.prototype.setPosition.call(this, 50);
+}
 
 
