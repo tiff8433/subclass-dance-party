@@ -1,12 +1,11 @@
 describe("blinkyDancer", function() {
-
   var blinkyDancer;
   var timeBetweenSteps = 100;
   var clock;
 
   beforeEach(function() {
     clock = sinon.useFakeTimers();
-    blinkyDancer = makeBlinkyDancer(10, 20, timeBetweenSteps);
+    blinkyDancer = MakeBlinkyDancer(10, 20, timeBetweenSteps);
   });
 
   it("should have a jQuery $node object", function(){
