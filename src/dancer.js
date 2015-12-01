@@ -12,10 +12,16 @@ MakeDancer.prototype.step = function(){
   var context = this;
   setTimeout(function(){context.step.call(context)}, context.timeBetweenSteps);
 };
-MakeDancer.prototype.setPosition = function(top, left){
-  var styleSettings = {
-    top: top,
-    left: left
+MakeDancer.prototype.setPosition = function(left, top){
+  if (arguments.length < 2){
+    var styleSettings = {
+      left: left
+    }
+  } else {
+    var styleSettings = {
+      top: top,
+      left: left
+    }
   };
   this.$node.css(styleSettings);
 };

@@ -13,7 +13,6 @@ MakeBlinkyDancer.prototype.step = function(){
 };
 
 MakeBlinkyDancer.prototype.lineUp =  function(){
-  console.log("lineUp called");
   MakeDancer.prototype.setPosition.call(this, 50);
 }
 
