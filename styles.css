@@ -37,11 +37,12 @@ body, a:link, a:visited, a:active{
 }
 .spinningDancer {
   height: 60px;
-  width: 5px;
+  width: 50px;
   border: 0px solid red;
   background-color: purple;
-  -moz-animation:.6s rotateRight infinite linear; 
-  -webkit-animation:.6s rotateRight infinite linear; 
+  background-image:url(https://qph.is.quoracdn.net/main-thumb-48754885-50-pfqphlsgxgxatjzvgepxyeefvkmlwkcj.jpeg);  background-repeat:no-repeat;
+  -moz-animation:1s rotateRight infinite linear; 
+  -webkit-animation:1s rotateRight infinite linear; 
 }
 
 @-moz-keyframes rotateRight{
